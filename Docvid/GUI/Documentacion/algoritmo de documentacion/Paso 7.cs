@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
+{
+    public partial class Paso_7 : Form
+    {
+        public Paso_7()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //paso9 n = new paso9();
+            //n.ShowDialog();
+            panelprincipalpasos a = new panelprincipalpasos();
+            a.setpasosiguiente(9);
+            a.panel.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //paso10 a = new paso10();
+            //a.ShowDialog();
+            panelprincipalpasos a = new panelprincipalpasos();
+            a.setpasosiguiente(10);
+            a.panel.Visible = false;
+        }
+    }
+}
