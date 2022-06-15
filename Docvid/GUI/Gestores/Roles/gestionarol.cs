@@ -192,5 +192,12 @@ namespace Docvid.GUI.Gestores.Roles
             CargarDatos();
         }
 
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            Reportes.Vista_Reportes.Reportes_sp un = new Reportes.Vista_Reportes.Reportes_sp(9,"123");
+            un.Show();
+
+        }
+
     }
 }

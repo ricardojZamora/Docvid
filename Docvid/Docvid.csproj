@@ -48,6 +48,11 @@
       <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
       <Private>True</Private>
@@ -59,6 +64,8 @@
     <Reference Include="MySql.Web, Version=6.9.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -348,6 +355,60 @@
     <Compile Include="GUI\nuevaprincipal.Designer.cs">
       <DependentUpon>nuevaprincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Reportes\ReporteEvidenciasp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteEvidenciasp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReporteProyectos1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteProyectos1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReporteProyectos2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteProyectos2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReporteProyectosComp2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteProyectosComp2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReporteProyectosCompartidos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteProyectosCompartidos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReporteRoles.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteRoles.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReportetipodeEvidencia.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportetipodeEvidencia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\Usuarios.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Usuarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\Vista_Reportes\Reportes_sp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\Vista_Reportes\Reportes_sp.Designer.cs">
+      <DependentUpon>Reportes_sp.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Rol2\cadenadecustodia\proyectos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -388,6 +449,62 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\DataSets\DataSetEvidencias.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEvidencias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetEvidencias1.cs">
+      <DependentUpon>DataSetEvidencias1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetEvidencias1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEvidencias1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectos1.cs">
+      <DependentUpon>DataSetProyectos1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectos1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProyectos1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectos2.cs">
+      <DependentUpon>DataSetProyectos2.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectos2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProyectos2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectosCompa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProyectosCompa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectosCompa2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProyectosCompa2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetRoles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRoles.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetUsuarios.cs">
+      <DependentUpon>DataSetUsuarios.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetUsuarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetUsuarios.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Splahs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -532,6 +649,41 @@
     <EmbeddedResource Include="GUI\nuevaprincipal.resx">
       <DependentUpon>nuevaprincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteEvidenciasp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteEvidenciasp.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteProyectos1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteProyectos1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteProyectos2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteProyectos2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteProyectosComp2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteProyectosComp2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteProyectosCompartidos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteProyectosCompartidos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteRoles.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteRoles.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReportetipodeEvidencia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportetipodeEvidencia.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\Usuarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Usuarios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\Vista_Reportes\Reportes_sp.resx">
+      <DependentUpon>Reportes_sp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Rol2\cadenadecustodia\proyectos.resx">
       <DependentUpon>proyectos.cs</DependentUpon>
     </EmbeddedResource>
@@ -573,6 +725,94 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\DataSets\DataSetEvidencias.xsc">
+      <DependentUpon>DataSetEvidencias.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetEvidencias.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEvidencias.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetEvidencias.xss">
+      <DependentUpon>DataSetEvidencias.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetEvidencias1.xsc">
+      <DependentUpon>DataSetEvidencias1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetEvidencias1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEvidencias1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetEvidencias1.xss">
+      <DependentUpon>DataSetEvidencias1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos1.xsc">
+      <DependentUpon>DataSetProyectos1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProyectos1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos1.xss">
+      <DependentUpon>DataSetProyectos1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos2.xsc">
+      <DependentUpon>DataSetProyectos2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProyectos2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos2.xss">
+      <DependentUpon>DataSetProyectos2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa.xsc">
+      <DependentUpon>DataSetProyectosCompa.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProyectosCompa.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa.xss">
+      <DependentUpon>DataSetProyectosCompa.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa2.xsc">
+      <DependentUpon>DataSetProyectosCompa2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProyectosCompa2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa2.xss">
+      <DependentUpon>DataSetProyectosCompa2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetRoles.xsc">
+      <DependentUpon>DataSetRoles.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetRoles.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRoles.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetRoles.xss">
+      <DependentUpon>DataSetRoles.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetUsuarios.xsc">
+      <DependentUpon>DataSetUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetUsuarios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetUsuarios.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetUsuarios.xss">
+      <DependentUpon>DataSetUsuarios.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -597,6 +837,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\acce3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

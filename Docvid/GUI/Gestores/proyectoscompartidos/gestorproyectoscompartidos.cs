@@ -12,6 +12,7 @@ namespace Docvid.GUI.Gestores.proyectoscompartidos
 {
     public partial class gestorproyectoscompartidos : Form
     {
+        
 
         BindingSource __CLIENTES = new BindingSource();
         private void CargarDatos()
@@ -123,6 +124,14 @@ namespace Docvid.GUI.Gestores.proyectoscompartidos
             {
                 MessageBox.Show("Error al abrir el proyecto");
             }
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            SessionManager.CLS.Sesion _SESION = SessionManager.CLS.Sesion.Instancia;
+            String idusuarioactual = _SESION.OUsuario.Idusuario.ToString();
+            Reportes.Vista_Reportes.Reportes_sp un = new Reportes.Vista_Reportes.Reportes_sp(6, idusuarioactual);
+            un.Show();
         }
 
                 }

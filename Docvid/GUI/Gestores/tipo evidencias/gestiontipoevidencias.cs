@@ -209,5 +209,12 @@ namespace Docvid.GUI.Gestores.tipo_evidencias
             txtcaracteristica.Text = dtgvdatos.CurrentRow.Cells["caracteristica"].Value.ToString();
             btnagregar.Text = "Modificar";
         }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            Reportes.Vista_Reportes.Reportes_sp un = new Reportes.Vista_Reportes.Reportes_sp(8,"123");
+            un.Show();
+
+        }
     }
 }
