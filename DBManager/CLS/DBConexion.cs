@@ -9,10 +9,10 @@ namespace DBManager.CLS
 {
     public class DBConexion
     {
-        protected MySqlConnection oConexion;
+        public MySqlConnection oConexion;
         String CadenaConexion = "Server=localhost;Port=3306;Database=documentacionevidencia;Uid=root;Pwd=admin";
 
-        protected Boolean Conectar()
+        public Boolean Conectar()
         {
             Boolean Conectado = false;
             try

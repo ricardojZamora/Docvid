@@ -331,6 +331,26 @@ namespace Docvid.GUI.Gestores.Evidencia
             FiltrarLocalmente();
         }
 
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            SessionManager.CLS.Sesion sesion = SessionManager.CLS.Sesion.Instancia;
+
+            if(chsinfecha.Checked == true){
+                Reportes.Vista_Reportes.Reportes_sp ni = new Reportes.Vista_Reportes.Reportes_sp(3, sesion.OUsuario.Idusuario);
+                ni.Show();
+            }
+            else{
+                Reportes.Vista_Reportes.Reportes_sp ni = new Reportes.Vista_Reportes.Reportes_sp(4, sesion.OUsuario.Idusuario);
+                ni.fecha(datecalendario.Value.Date.Day.ToString(), datecalendario.Value.Date.Month.ToString(), datecalendario.Value.Date.Year.ToString());
+                ni.Show();
+            }
+        }
+
         /*FIN DE LA INSPECCION DE ARCHIVOS CON HASH*/
 
 

@@ -50,6 +50,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblestado = new System.Windows.Forms.ToolStripStatusLabel();
             this.chsolomisproyectos = new System.Windows.Forms.CheckBox();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnReporte = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdatos)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -57,6 +59,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnagregar,
             this.toolStripSeparator1,
@@ -64,10 +67,13 @@
             this.toolStripSeparator2,
             this.btneliminar,
             this.txtfiltro,
-            this.toolStripLabel1});
+            this.toolStripLabel1,
+            this.toolStripSeparator3,
+            this.btnReporte});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(880, 25);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(1320, 32);
             this.toolStrip1.TabIndex = 14;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -77,28 +83,28 @@
             this.btnagregar.Image = ((System.Drawing.Image)(resources.GetObject("btnagregar.Image")));
             this.btnagregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnagregar.Name = "btnagregar";
-            this.btnagregar.Size = new System.Drawing.Size(69, 22);
+            this.btnagregar.Size = new System.Drawing.Size(104, 29);
             this.btnagregar.Text = "Agregar";
             this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 32);
             // 
             // btnmodificar
             // 
             this.btnmodificar.Image = ((System.Drawing.Image)(resources.GetObject("btnmodificar.Image")));
             this.btnmodificar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(78, 22);
+            this.btnmodificar.Size = new System.Drawing.Size(115, 29);
             this.btnmodificar.Text = "Modificar";
             this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 32);
             // 
             // btneliminar
             // 
@@ -106,7 +112,7 @@
             this.btneliminar.Image = ((System.Drawing.Image)(resources.GetObject("btneliminar.Image")));
             this.btneliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(70, 22);
+            this.btneliminar.Size = new System.Drawing.Size(102, 29);
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
@@ -115,14 +121,14 @@
             this.txtfiltro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txtfiltro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtfiltro.Name = "txtfiltro";
-            this.txtfiltro.Size = new System.Drawing.Size(100, 25);
+            this.txtfiltro.Size = new System.Drawing.Size(149, 32);
             this.txtfiltro.TextChanged += new System.EventHandler(this.txtfiltro_TextChanged);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(37, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(56, 29);
             this.toolStripLabel1.Text = "Filtrar";
             // 
             // dtgvdatos
@@ -151,7 +157,8 @@
             this.cantidad_de_evidencias});
             this.dtgvdatos.EnableHeadersVisualStyles = false;
             this.dtgvdatos.GridColor = System.Drawing.Color.SteelBlue;
-            this.dtgvdatos.Location = new System.Drawing.Point(0, 27);
+            this.dtgvdatos.Location = new System.Drawing.Point(0, 42);
+            this.dtgvdatos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtgvdatos.Name = "dtgvdatos";
             this.dtgvdatos.ReadOnly = true;
             this.dtgvdatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -170,7 +177,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dtgvdatos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvdatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvdatos.Size = new System.Drawing.Size(880, 280);
+            this.dtgvdatos.Size = new System.Drawing.Size(1320, 431);
             this.dtgvdatos.TabIndex = 15;
             this.dtgvdatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdatos_CellContentClick);
             this.dtgvdatos.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdatos_CellEndEdit);
@@ -216,7 +223,7 @@
             this.nombre_usuario.HeaderText = "Nombre usuario creador";
             this.nombre_usuario.Name = "nombre_usuario";
             this.nombre_usuario.ReadOnly = true;
-            this.nombre_usuario.Width = 152;
+            this.nombre_usuario.Width = 226;
             // 
             // cantidad_de_evidencias
             // 
@@ -228,41 +235,59 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblestado});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 544);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 841);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(880, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1320, 30);
             this.statusStrip1.TabIndex = 16;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // lblestado
             // 
             this.lblestado.Name = "lblestado";
-            this.lblestado.Size = new System.Drawing.Size(136, 17);
+            this.lblestado.Size = new System.Drawing.Size(208, 25);
             this.lblestado.Text = "Registros encontrados: 0";
             // 
             // chsolomisproyectos
             // 
             this.chsolomisproyectos.AutoSize = true;
-            this.chsolomisproyectos.Location = new System.Drawing.Point(248, 4);
+            this.chsolomisproyectos.Location = new System.Drawing.Point(551, 8);
+            this.chsolomisproyectos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chsolomisproyectos.Name = "chsolomisproyectos";
-            this.chsolomisproyectos.Size = new System.Drawing.Size(114, 17);
+            this.chsolomisproyectos.Size = new System.Drawing.Size(168, 24);
             this.chsolomisproyectos.TabIndex = 17;
             this.chsolomisproyectos.Text = "Solo mis proyectos";
             this.chsolomisproyectos.UseVisualStyleBackColor = true;
             this.chsolomisproyectos.CheckedChanged += new System.EventHandler(this.chsolomisproyectos_CheckedChanged);
             // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 32);
+            // 
+            // btnReporte
+            // 
+            this.btnReporte.Image = ((System.Drawing.Image)(resources.GetObject("btnReporte.Image")));
+            this.btnReporte.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(170, 29);
+            this.btnReporte.Text = "Generar_Reporte";
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
             // gestioncadenas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 566);
+            this.ClientSize = new System.Drawing.Size(1320, 871);
             this.Controls.Add(this.chsolomisproyectos);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.dtgvdatos);
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "gestioncadenas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Todos los proyectos";
@@ -297,5 +322,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idusuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre_usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidad_de_evidencias;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton btnReporte;
     }
 }

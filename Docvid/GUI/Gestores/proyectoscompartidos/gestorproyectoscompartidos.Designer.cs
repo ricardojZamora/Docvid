@@ -47,6 +47,8 @@
             this.nombre_usuario_propietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnReporte = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdatos)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -55,14 +57,14 @@
             // lblestado
             // 
             this.lblestado.Name = "lblestado";
-            this.lblestado.Size = new System.Drawing.Size(136, 17);
+            this.lblestado.Size = new System.Drawing.Size(208, 25);
             this.lblestado.Text = "Registros encontrados: 0";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(37, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(56, 29);
             this.toolStripLabel1.Text = "Filtrar";
             // 
             // txtfiltro
@@ -70,7 +72,7 @@
             this.txtfiltro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txtfiltro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtfiltro.Name = "txtfiltro";
-            this.txtfiltro.Size = new System.Drawing.Size(100, 25);
+            this.txtfiltro.Size = new System.Drawing.Size(149, 32);
             this.txtfiltro.TextChanged += new System.EventHandler(this.txtfiltro_TextChanged);
             // 
             // btneliminar
@@ -78,29 +80,31 @@
             this.btneliminar.Image = ((System.Drawing.Image)(resources.GetObject("btneliminar.Image")));
             this.btneliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(70, 22);
+            this.btneliminar.Size = new System.Drawing.Size(102, 29);
             this.btneliminar.Text = "Eliminar";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 32);
             // 
             // btnmodificar
             // 
             this.btnmodificar.Image = ((System.Drawing.Image)(resources.GetObject("btnmodificar.Image")));
             this.btnmodificar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(78, 22);
+            this.btnmodificar.Size = new System.Drawing.Size(115, 29);
             this.btnmodificar.Text = "Modificar";
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblestado});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 544);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 841);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(880, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1320, 30);
             this.statusStrip1.TabIndex = 19;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -127,7 +131,8 @@
             this.descripcion});
             this.dtgvdatos.EnableHeadersVisualStyles = false;
             this.dtgvdatos.GridColor = System.Drawing.Color.SteelBlue;
-            this.dtgvdatos.Location = new System.Drawing.Point(0, 28);
+            this.dtgvdatos.Location = new System.Drawing.Point(0, 43);
+            this.dtgvdatos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtgvdatos.Name = "dtgvdatos";
             this.dtgvdatos.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -147,7 +152,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvdatos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvdatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvdatos.Size = new System.Drawing.Size(880, 513);
+            this.dtgvdatos.Size = new System.Drawing.Size(1320, 789);
             this.dtgvdatos.TabIndex = 18;
             this.dtgvdatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdatos_CellContentClick);
             this.dtgvdatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdatos_CellDoubleClick);
@@ -168,7 +173,7 @@
             this.idproyecto.HeaderText = "ID proyecto";
             this.idproyecto.Name = "idproyecto";
             this.idproyecto.ReadOnly = true;
-            this.idproyecto.Width = 80;
+            this.idproyecto.Width = 121;
             // 
             // titulo
             // 
@@ -177,7 +182,7 @@
             this.titulo.HeaderText = "Nombre del proyecto";
             this.titulo.Name = "titulo";
             this.titulo.ReadOnly = true;
-            this.titulo.Width = 119;
+            this.titulo.Width = 183;
             // 
             // nombre
             // 
@@ -195,7 +200,7 @@
             this.nombre_usuario_propietario.HeaderText = "Usuario propietario";
             this.nombre_usuario_propietario.Name = "nombre_usuario_propietario";
             this.nombre_usuario_propietario.ReadOnly = true;
-            this.nombre_usuario_propietario.Width = 110;
+            this.nombre_usuario_propietario.Width = 171;
             // 
             // descripcion
             // 
@@ -204,31 +209,50 @@
             this.descripcion.HeaderText = "Descripcion";
             this.descripcion.Name = "descripcion";
             this.descripcion.ReadOnly = true;
-            this.descripcion.Width = 88;
+            this.descripcion.Width = 135;
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnmodificar,
             this.toolStripSeparator2,
             this.btneliminar,
             this.txtfiltro,
-            this.toolStripLabel1});
+            this.toolStripLabel1,
+            this.toolStripSeparator1,
+            this.btnReporte});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(880, 25);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(1320, 32);
             this.toolStrip1.TabIndex = 17;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 32);
+            // 
+            // btnReporte
+            // 
+            this.btnReporte.Image = ((System.Drawing.Image)(resources.GetObject("btnReporte.Image")));
+            this.btnReporte.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(168, 29);
+            this.btnReporte.Text = "Generar Reporte";
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
             // gestorproyectoscompartidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 566);
+            this.ClientSize = new System.Drawing.Size(1320, 871);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.dtgvdatos);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "gestorproyectoscompartidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyectos compartidos conmigo";
@@ -260,5 +284,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre_usuario_propietario;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton btnReporte;
     }
 }

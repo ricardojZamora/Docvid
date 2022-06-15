@@ -14,6 +14,7 @@ namespace Docvid.GUI.Gestores.compartirproyectos
     {
         DataTable Resultadopermisos = new DataTable();
         DataTable Resultadoexisteelproyectocompartir = new DataTable();
+        
 
         public gestionarcompartir()
         {
@@ -356,6 +357,14 @@ namespace Docvid.GUI.Gestores.compartirproyectos
                     }
                 }
             
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            SessionManager.CLS.Sesion _SESION = SessionManager.CLS.Sesion.Instancia;
+            String idusuarioactual = _SESION.OUsuario.Idusuario.ToString();
+            Reportes.Vista_Reportes.Reportes_sp un = new Reportes.Vista_Reportes.Reportes_sp(5,idusuarioactual);
+            un.Show();
         }
     }
 }

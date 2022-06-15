@@ -15,6 +15,7 @@ namespace Docvid.GUI.Gestores.Cadenasdecustodias
         //variable para consultar que documentos de que cadena de custodia abrir
         public static String proyectoseleccionado;
         DataTable permisosusuario = new DataTable();
+        
 
         private void consultarpermisosusuario()
         {
@@ -323,6 +324,20 @@ namespace Docvid.GUI.Gestores.Cadenasdecustodias
         private void chsolomisproyectos_CheckedChanged(object sender, EventArgs e)
         {
             consultarcheckverproyectosajenos();
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            if(chsolomisproyectos.Checked == true){
+                SessionManager.CLS.Sesion sesion = SessionManager.CLS.Sesion.Instancia;
+            Reportes.Vista_Reportes.Reportes_sp repor = new Reportes.Vista_Reportes.Reportes_sp(1, sesion.OUsuario.Idusuario);
+            repor.Show();
+
+            }else{
+                Reportes.Vista_Reportes.Reportes_sp repor = new Reportes.Vista_Reportes.Reportes_sp(2, "No");
+                repor.Show();
+            }
+            
         }
 
 

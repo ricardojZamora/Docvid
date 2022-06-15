@@ -333,6 +333,12 @@ namespace Docvid.GUI.Gestores.Usuarios
             }
         }
 
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            Reportes.Vista_Reportes.Reportes_sp un = new Reportes.Vista_Reportes.Reportes_sp(7, "1");
+            un.Show();
+        }
+
 
     }
 }

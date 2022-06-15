@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gestionarcompartir));
             this.dtgvdatos = new System.Windows.Forms.DataGridView();
             this.idproyectocompartido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +61,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.Notificador = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnReporte = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdatos)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -72,14 +74,14 @@
             this.dtgvdatos.AllowUserToAddRows = false;
             this.dtgvdatos.AllowUserToDeleteRows = false;
             this.dtgvdatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSlateGray;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvdatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvdatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvdatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvdatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idproyectocompartido,
@@ -90,27 +92,28 @@
             this.usuario_propietario});
             this.dtgvdatos.EnableHeadersVisualStyles = false;
             this.dtgvdatos.GridColor = System.Drawing.Color.SteelBlue;
-            this.dtgvdatos.Location = new System.Drawing.Point(0, 28);
+            this.dtgvdatos.Location = new System.Drawing.Point(0, 43);
+            this.dtgvdatos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtgvdatos.Name = "dtgvdatos";
             this.dtgvdatos.ReadOnly = true;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvdatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvdatos.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvdatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvdatos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvdatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvdatos.Size = new System.Drawing.Size(654, 324);
+            this.dtgvdatos.Size = new System.Drawing.Size(981, 498);
             this.dtgvdatos.TabIndex = 21;
             this.dtgvdatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdatos_CellContentClick);
             this.dtgvdatos.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdatos_CellContentDoubleClick);
@@ -131,7 +134,7 @@
             this.idproyecto.HeaderText = "ID proyecto";
             this.idproyecto.Name = "idproyecto";
             this.idproyecto.ReadOnly = true;
-            this.idproyecto.Width = 80;
+            this.idproyecto.Width = 121;
             // 
             // titulo
             // 
@@ -140,7 +143,7 @@
             this.titulo.HeaderText = "Titulo del proyecto";
             this.titulo.Name = "titulo";
             this.titulo.ReadOnly = true;
-            this.titulo.Width = 109;
+            this.titulo.Width = 167;
             // 
             // descripcion
             // 
@@ -149,7 +152,7 @@
             this.descripcion.HeaderText = "Descripcion del proyecto";
             this.descripcion.Name = "descripcion";
             this.descripcion.ReadOnly = true;
-            this.descripcion.Width = 99;
+            this.descripcion.Width = 153;
             // 
             // usuario_compartido
             // 
@@ -158,7 +161,7 @@
             this.usuario_compartido.HeaderText = "Compartido a";
             this.usuario_compartido.Name = "usuario_compartido";
             this.usuario_compartido.ReadOnly = true;
-            this.usuario_compartido.Width = 87;
+            this.usuario_compartido.Width = 134;
             // 
             // usuario_propietario
             // 
@@ -167,25 +170,25 @@
             this.usuario_propietario.HeaderText = "Nombre del usuario propietario";
             this.usuario_propietario.Name = "usuario_propietario";
             this.usuario_propietario.ReadOnly = true;
-            this.usuario_propietario.Width = 159;
+            this.usuario_propietario.Width = 251;
             // 
             // lblestado
             // 
             this.lblestado.Name = "lblestado";
-            this.lblestado.Size = new System.Drawing.Size(136, 17);
+            this.lblestado.Size = new System.Drawing.Size(208, 25);
             this.lblestado.Text = "Registros encontrados: 0";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(37, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(56, 29);
             this.toolStripLabel1.Text = "Filtrar";
             // 
             // txtfiltro
             // 
             this.txtfiltro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtfiltro.Name = "txtfiltro";
-            this.txtfiltro.Size = new System.Drawing.Size(100, 25);
+            this.txtfiltro.Size = new System.Drawing.Size(149, 32);
             this.txtfiltro.TextChanged += new System.EventHandler(this.txtfiltro_TextChanged);
             // 
             // btneliminar
@@ -193,36 +196,39 @@
             this.btneliminar.Image = ((System.Drawing.Image)(resources.GetObject("btneliminar.Image")));
             this.btneliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(70, 22);
+            this.btneliminar.Size = new System.Drawing.Size(102, 29);
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 32);
             // 
             // btnmodificar
             // 
             this.btnmodificar.Image = ((System.Drawing.Image)(resources.GetObject("btnmodificar.Image")));
             this.btnmodificar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(78, 22);
+            this.btnmodificar.Size = new System.Drawing.Size(115, 29);
             this.btnmodificar.Text = "Modificar";
             this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblestado});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 544);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 841);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(880, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1320, 30);
             this.statusStrip1.TabIndex = 22;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripSeparator1,
@@ -230,11 +236,14 @@
             this.toolStripSeparator3,
             this.btneliminar,
             this.toolStripSeparator2,
+            this.btnReporte,
+            this.toolStripSeparator4,
             this.toolStripLabel1,
             this.txtfiltro});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(880, 25);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(1320, 32);
             this.toolStrip1.TabIndex = 20;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -243,24 +252,25 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(69, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(104, 29);
             this.toolStripButton1.Text = "Agregar";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 32);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 32);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(723, 274);
+            this.button1.Location = new System.Drawing.Point(1084, 422);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 36);
+            this.button1.Size = new System.Drawing.Size(132, 55);
             this.button1.TabIndex = 27;
             this.button1.Text = "Selecionar";
             this.button1.UseVisualStyleBackColor = true;
@@ -268,66 +278,73 @@
             // 
             // txtidusuario
             // 
-            this.txtidusuario.Location = new System.Drawing.Point(705, 124);
+            this.txtidusuario.Location = new System.Drawing.Point(1058, 191);
+            this.txtidusuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtidusuario.Multiline = true;
             this.txtidusuario.Name = "txtidusuario";
             this.txtidusuario.ReadOnly = true;
-            this.txtidusuario.Size = new System.Drawing.Size(115, 28);
+            this.txtidusuario.Size = new System.Drawing.Size(170, 41);
             this.txtidusuario.TabIndex = 28;
             this.txtidusuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(711, 102);
+            this.label1.Location = new System.Drawing.Point(1066, 157);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 19);
+            this.label1.Size = new System.Drawing.Size(150, 29);
             this.label1.TabIndex = 29;
             this.label1.Text = "Usuario seleccionado";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(711, 29);
+            this.label2.Location = new System.Drawing.Point(1066, 45);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 19);
+            this.label2.Size = new System.Drawing.Size(150, 29);
             this.label2.TabIndex = 31;
             this.label2.Text = "idproyectocompartido";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtidproyectocompartido
             // 
-            this.txtidproyectocompartido.Location = new System.Drawing.Point(705, 51);
+            this.txtidproyectocompartido.Location = new System.Drawing.Point(1058, 78);
+            this.txtidproyectocompartido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtidproyectocompartido.Multiline = true;
             this.txtidproyectocompartido.Name = "txtidproyectocompartido";
             this.txtidproyectocompartido.ReadOnly = true;
-            this.txtidproyectocompartido.Size = new System.Drawing.Size(115, 28);
+            this.txtidproyectocompartido.Size = new System.Drawing.Size(170, 41);
             this.txtidproyectocompartido.TabIndex = 30;
             this.txtidproyectocompartido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(711, 218);
+            this.label3.Location = new System.Drawing.Point(1066, 335);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 19);
+            this.label3.Size = new System.Drawing.Size(150, 29);
             this.label3.TabIndex = 33;
             this.label3.Text = "Proyecto";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtproyecto
             // 
-            this.txtproyecto.Location = new System.Drawing.Point(705, 240);
+            this.txtproyecto.Location = new System.Drawing.Point(1058, 369);
+            this.txtproyecto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtproyecto.Multiline = true;
             this.txtproyecto.Name = "txtproyecto";
             this.txtproyecto.ReadOnly = true;
-            this.txtproyecto.Size = new System.Drawing.Size(115, 28);
+            this.txtproyecto.Size = new System.Drawing.Size(170, 41);
             this.txtproyecto.TabIndex = 32;
             this.txtproyecto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(721, 157);
+            this.button2.Location = new System.Drawing.Point(1082, 242);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 27);
+            this.button2.Size = new System.Drawing.Size(132, 42);
             this.button2.TabIndex = 34;
             this.button2.Text = "Buscar";
             this.button2.UseVisualStyleBackColor = true;
@@ -335,9 +352,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(723, 328);
+            this.button3.Location = new System.Drawing.Point(1084, 505);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 25);
+            this.button3.Size = new System.Drawing.Size(132, 38);
             this.button3.TabIndex = 35;
             this.button3.Text = "Agregar";
             this.button3.UseVisualStyleBackColor = true;
@@ -347,11 +365,25 @@
             // 
             this.Notificador.ContainerControl = this;
             // 
+            // btnReporte
+            // 
+            this.btnReporte.Image = ((System.Drawing.Image)(resources.GetObject("btnReporte.Image")));
+            this.btnReporte.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(168, 29);
+            this.btnReporte.Text = "Generar Reporte";
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 32);
+            // 
             // gestionarcompartir
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 566);
+            this.ClientSize = new System.Drawing.Size(1320, 871);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
@@ -365,6 +397,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "gestionarcompartir";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyectos compartidos";
@@ -412,5 +445,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuario_compartido;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuario_propietario;
+        private System.Windows.Forms.ToolStripButton btnReporte;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
     }
 }
