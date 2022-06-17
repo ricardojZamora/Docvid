@@ -35,6 +35,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.txtcarpeta = new System.Windows.Forms.TextBox();
             this.btnagregarcarpeta = new System.Windows.Forms.Button();
+            this.fbd = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -100,6 +101,7 @@
             this.btnagregarcarpeta.TabIndex = 5;
             this.btnagregarcarpeta.Text = "Agregar carpeta";
             this.btnagregarcarpeta.UseVisualStyleBackColor = true;
+            this.btnagregarcarpeta.Click += new System.EventHandler(this.btnagregarcarpeta_Click);
             // 
             // Paso_7
             // 
@@ -131,5 +133,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtcarpeta;
         private System.Windows.Forms.Button btnagregarcarpeta;
+        public System.Windows.Forms.FolderBrowserDialog fbd;
     }
 }

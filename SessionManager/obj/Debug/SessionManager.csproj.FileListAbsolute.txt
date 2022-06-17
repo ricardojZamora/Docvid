@@ -46,3 +46,4 @@ C:\Users\kevin\Documents\GitHub\Docvid\SessionManager\bin\Debug\itextsharp.dll
 C:\Users\kevin\Documents\GitHub\Docvid\SessionManager\bin\Debug\itextsharp.xml
 C:\Users\kevin\Documents\GitHub\Docvid\SessionManager\obj\Debug\SessionManager.dll
 C:\Users\kevin\Documents\GitHub\Docvid\SessionManager\obj\Debug\SessionManager.pdb
+C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\obj\Debug\SessionManager.csprojResolveAssemblyReference.cache

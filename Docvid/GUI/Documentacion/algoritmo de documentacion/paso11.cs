@@ -19,6 +19,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
+            panelprincipalpasos a = new panelprincipalpasos();
+            a.agregarpaso("Dispositivo tiene bateria");
             lbl1.Visible = true;
             lbl2.Visible = true;
             lbl3.Visible = true;
@@ -27,6 +29,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
+            panelprincipalpasos a = new panelprincipalpasos();
+            a.agregarpaso("Dispositivo no tiene bateria");
             lbl5.Visible = true;
             lbl6.Visible = true;
         }

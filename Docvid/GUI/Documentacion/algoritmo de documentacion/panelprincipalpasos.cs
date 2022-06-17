@@ -14,6 +14,22 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
     {
         public static int pasosiguiente =0;
         Boolean cambiopanel = false;
+        //esta lista almacenara los pasos que se haran de algoritmo
+        List<String> pasoshechos = new List<String>();
+
+        public List<String> getlista ()
+    {
+        return pasoshechos;
+    }
+        public void vercantidadenlalista()
+        {
+            MessageBox.Show(pasoshechos.Count.ToString());
+        }
+        public void agregarpaso(String agregar)
+        {
+            pasoshechos.Add(agregar);
+        }
+
         public int[] pasosrecorrido;
         
         int contadorrecorrido = 0;  

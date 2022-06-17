@@ -23,6 +23,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
             a.setpasosiguiente(8);
+            a.agregarpaso("Los datos a extraer no son volatiles");
+
             a.panel.Visible = false;
         }
 
@@ -32,6 +34,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
             a.setpasosiguiente(7);
+            a.agregarpaso("Los datos a extraer son volatiles");
+
             a.panel.Visible = false;
         }
 
@@ -41,6 +45,7 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
             a.setpasosiguiente(7);
+            a.agregarpaso("Se usa cifrado en el cifrado de la informacion a extraer");
             a.panel.Visible = false;
         }
 
@@ -50,7 +55,14 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
             a.setpasosiguiente(8);
+            a.agregarpaso("Se usa cifrado en el cifrado de la informacion a extraer");
+
             a.panel.Visible = false;
+        }
+
+        private void paso6_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

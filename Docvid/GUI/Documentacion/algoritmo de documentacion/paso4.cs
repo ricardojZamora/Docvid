@@ -22,6 +22,7 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //operacion_terminada a = new operacion_terminada();
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
+            a.agregarpaso("No hay otro medio de comunicación integrado");
             a.setpasosiguiente(14);
             a.panel.Visible = false;
         }
@@ -38,6 +39,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
         private void btnsi_Click(object sender, EventArgs e)
         {
             lbl3.Visible = true;
+            panelprincipalpasos a = new panelprincipalpasos();
+            a.agregarpaso("Hay otro medio de comunicación integrado");
         }
     }
 }

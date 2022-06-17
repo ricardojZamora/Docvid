@@ -38,11 +38,16 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
+            panelprincipalpasos a = new panelprincipalpasos();
+
+            a.agregarpaso("Los datos del equipo son estables");
             lbl1.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            panelprincipalpasos a = new panelprincipalpasos();
+            a.agregarpaso("No o no se sabe si los datos son estables");
             lbl2.Visible = true;
         }
     }

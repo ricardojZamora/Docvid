@@ -29,17 +29,26 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.txtreporte = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(168, 207);
+            this.label1.Location = new System.Drawing.Point(166, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(235, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Escenario terminado";
+            // 
+            // txtreporte
+            // 
+            this.txtreporte.Location = new System.Drawing.Point(40, 58);
+            this.txtreporte.Multiline = true;
+            this.txtreporte.Name = "txtreporte";
+            this.txtreporte.Size = new System.Drawing.Size(520, 360);
+            this.txtreporte.TabIndex = 1;
             // 
             // operacion_terminada
             // 
@@ -47,11 +56,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 430);
             this.ControlBox = false;
+            this.Controls.Add(this.txtreporte);
             this.Controls.Add(this.label1);
             this.Name = "operacion_terminada";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "operacion_terminada";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.operacion_terminada_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -60,5 +71,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtreporte;
     }
 }

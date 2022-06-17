@@ -16,5 +16,19 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
         {
             InitializeComponent();
         }
+
+        private void operacion_terminada_Load(object sender, EventArgs e)
+        {
+            panelprincipalpasos a = new panelprincipalpasos();
+            List<String> pasoshechos = a.getlista();
+            txtreporte.Text = "";
+            a.agregarpaso("Termino pasos de un dispositivo");
+            for (int i = 0; i < pasoshechos.Count; i++)
+            {
+                txtreporte.Text = txtreporte.Text +  pasoshechos[i] + "\n";
+            }
+         //   MessageBox.Show(pasoshechos.Count.ToString());
+            a.vercantidadenlalista();
+        }
     }
 }

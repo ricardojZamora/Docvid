@@ -37,6 +37,8 @@
             this.txtcarpeta = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.fbd = new System.Windows.Forms.FolderBrowserDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // label3
@@ -113,6 +115,7 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "Agregar archivo";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox1
             // 
@@ -121,6 +124,10 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(155, 32);
             this.textBox1.TabIndex = 11;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // paso10
             // 
@@ -156,5 +163,7 @@
         private System.Windows.Forms.TextBox txtcarpeta;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.FolderBrowserDialog fbd;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
