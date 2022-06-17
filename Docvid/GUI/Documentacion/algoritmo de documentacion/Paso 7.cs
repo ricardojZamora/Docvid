@@ -69,5 +69,40 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
                 // txtruta.Text = fbd.SelectedPath;
             }
         }
+
+        private void txtcarpeta_TextChanged(object sender, EventArgs e)
+        {
+            if(txtcarpeta.Text!= null)
+            {
+                btnguardarcarpeta.Visible = true;
+            }
+            else
+            {
+                btnguardarcarpeta.Visible = false;
+
+            }
+        }
+
+        private void btnguardarcarpeta_Click(object sender, EventArgs e)
+        {
+            SessionManager.CLS.Sesion sesion = SessionManager.CLS.Sesion.Instancia;
+            General.CLS.evidencias oEmpleado = new General.CLS.evidencias();
+            panelprincipalpasos a = new panelprincipalpasos();
+            oEmpleado.Idproyecto = a.getidproyecto();
+            oEmpleado.Idtipoevidencia = "1";
+            oEmpleado.Idusuario = sesion.OUsuario.Idusuario.ToString();
+            oEmpleado.Hash = "No verificado";
+            oEmpleado.Ruta = txtcarpeta.Text;
+            oEmpleado.Nota = "";
+
+            if (oEmpleado.Guardar())
+            {
+                MessageBox.Show("Registro guardado correctamente", "confirmacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("El registro no pudo ser guardado", "advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -86,11 +86,11 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
                 auxiliar1 = auxiliar1.Replace(@"\", "/");
 
                 // algoritmo de reemplazo de \ a /
-                String auxiliar = textBox1.Text.Replace(@"\", "/");
+                String auxiliar = txtarchivo.Text.Replace(@"\", "/");
 
-                textBox1.Text = auxiliar1;
+                txtarchivo.Text = auxiliar1;
                 auxiliarruta = auxiliar1;
-                textBox1.Text = auxiliar;
+                txtarchivo.Text = auxiliar;
                 // txtruta.Text = auxiliar;
                 //if (guardar)
                 //{
@@ -101,6 +101,53 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
                 String extension = Path.GetExtension(auxiliar1);
                 extension = Regex.Replace(extension, "[@,\\.\";'\\\\]", string.Empty);
                 
+            }
+        }
+
+        private void btnguardararchivos_Click(object sender, EventArgs e)
+        {
+            SessionManager.CLS.Sesion sesion = SessionManager.CLS.Sesion.Instancia;
+            General.CLS.evidencias oEmpleado = new General.CLS.evidencias();
+            panelprincipalpasos a = new panelprincipalpasos();
+            oEmpleado.Idproyecto = a.getidproyecto();
+            oEmpleado.Idtipoevidencia = "1";
+            oEmpleado.Idusuario = sesion.OUsuario.Idusuario;
+            oEmpleado.Hash = "No verificado";
+            oEmpleado.Ruta = txtcarpeta.Text;
+            oEmpleado.Nota = "";
+            if (oEmpleado.Guardar())
+            {
+                MessageBox.Show("Registro guardado correctamente", "confirmacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("El registro no pudo ser guardado", "advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtcarpeta_TextChanged(object sender, EventArgs e)
+        {
+            if(txtcarpeta.Text!= null)
+            {
+                btnguardararchivos.Visible = true;
+            }
+            else
+            {
+                btnguardararchivos.Visible = false;
+
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (txtarchivo.Text != null) 
+            {
+                btnguardararchivos.Visible = true;
+            }
+            else
+            {
+                btnguardararchivos.Visible = false;
+
             }
         }
     }

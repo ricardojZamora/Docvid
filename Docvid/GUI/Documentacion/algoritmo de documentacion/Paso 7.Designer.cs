@@ -36,6 +36,7 @@
             this.txtcarpeta = new System.Windows.Forms.TextBox();
             this.btnagregarcarpeta = new System.Windows.Forms.Button();
             this.fbd = new System.Windows.Forms.FolderBrowserDialog();
+            this.btnguardarcarpeta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -91,6 +92,7 @@
             this.txtcarpeta.Name = "txtcarpeta";
             this.txtcarpeta.Size = new System.Drawing.Size(212, 32);
             this.txtcarpeta.TabIndex = 4;
+            this.txtcarpeta.TextChanged += new System.EventHandler(this.txtcarpeta_TextChanged);
             // 
             // btnagregarcarpeta
             // 
@@ -103,6 +105,18 @@
             this.btnagregarcarpeta.UseVisualStyleBackColor = true;
             this.btnagregarcarpeta.Click += new System.EventHandler(this.btnagregarcarpeta_Click);
             // 
+            // btnguardarcarpeta
+            // 
+            this.btnguardarcarpeta.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnguardarcarpeta.Location = new System.Drawing.Point(193, 180);
+            this.btnguardarcarpeta.Name = "btnguardarcarpeta";
+            this.btnguardarcarpeta.Size = new System.Drawing.Size(224, 32);
+            this.btnguardarcarpeta.TabIndex = 6;
+            this.btnguardarcarpeta.Text = "Guardar carpeta";
+            this.btnguardarcarpeta.UseVisualStyleBackColor = true;
+            this.btnguardarcarpeta.Visible = false;
+            this.btnguardarcarpeta.Click += new System.EventHandler(this.btnguardarcarpeta_Click);
+            // 
             // Paso_7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -110,6 +124,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(603, 430);
             this.ControlBox = false;
+            this.Controls.Add(this.btnguardarcarpeta);
             this.Controls.Add(this.btnagregarcarpeta);
             this.Controls.Add(this.txtcarpeta);
             this.Controls.Add(this.button2);
@@ -134,5 +149,6 @@
         private System.Windows.Forms.TextBox txtcarpeta;
         private System.Windows.Forms.Button btnagregarcarpeta;
         public System.Windows.Forms.FolderBrowserDialog fbd;
+        public System.Windows.Forms.Button btnguardarcarpeta;
     }
 }

@@ -29,6 +29,10 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
         {
             pasoshechos.Add(agregar);
         }
+        public String getidproyecto()
+        {
+            return txtidescenario.Text;
+        }
 
         public int[] pasosrecorrido;
         
