@@ -409,8 +409,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
 
             if(escenarios.Guardar())
             {
-                DataTable consulta = operacion.Consultar("select * from escenarios where idusuario = '" + sesion.OUsuario.Idusuario + "' order by idescenario desc limit 1 ;");
-                txtidescenario.Text = consulta.Rows[0]["idescenario"].ToString();
+                DataTable consulta = operacion.Consultar("select * from proyectos where idusuario = '" + sesion.OUsuario.Idusuario + "' order by idproyecto desc limit 1 ;");
+                txtidescenario.Text = consulta.Rows[0]["idproyecto"].ToString();
             }
             else
             {
@@ -423,8 +423,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             DBManager.CLS.DBOperacion operacion = new DBManager.CLS.DBOperacion();
             SessionManager.CLS.Sesion sesion = SessionManager.CLS.Sesion.Instancia;
             General.CLS.escenarios escenarios = new General.CLS.escenarios();
-            DataTable consulta = operacion.Consultar("Select * from escenarios where idusuario = '"+sesion.OUsuario.Idusuario+"' order by idescenario desc limit 1;");
-            escenarios.Idescenario = consulta.Rows[0]["idescenario"].ToString();
+            DataTable consulta = operacion.Consultar("Select * from proyectos where idusuario = '"+sesion.OUsuario.Idusuario+"' order by idproyecto desc limit 1;");
+            escenarios.Idescenario = consulta.Rows[0]["idproyecto"].ToString();
             escenarios.Notas = txtnotas.Text;
             escenarios.Pasoactual = pasosiguiente.ToString();
             escenarios.Idusuario = consulta.Rows[0]["idusuario"].ToString();

@@ -46,13 +46,20 @@ namespace General.CLS
         // operaciones
         public Boolean Guardar()
         {
+            //Boolean Guardado = false;
+            //StringBuilder Sentencia = new StringBuilder();
+            //Sentencia.Append("INSERT INTO escenarios(idescenario,titulo,notas,pasoactual,idusuario) values ( null, ");
+            //Sentencia.Append("'" + titulo + "',");
+            //Sentencia.Append("'" + notas+ "',");
+            //Sentencia.Append("'" + pasoactual+ "',");
+            //Sentencia.Append("'" + idusuario+ "');");
+            //DBManager.CLS.DBOperacion oOperacion = new DBManager.CLS.DBOperacion();
             Boolean Guardado = false;
             StringBuilder Sentencia = new StringBuilder();
-            Sentencia.Append("INSERT INTO escenarios(idescenario,titulo,notas,pasoactual,idusuario) values ( null, ");
+            Sentencia.Append("INSERT INTO proyectos(idproyecto,titulo,descripcion,idusuario) values ( null, ");
             Sentencia.Append("'" + titulo + "',");
-            Sentencia.Append("'" + notas+ "',");
-            Sentencia.Append("'" + pasoactual+ "',");
-            Sentencia.Append("'" + idusuario+ "');");
+            Sentencia.Append("'" + notas + "',");
+            Sentencia.Append("'" + idusuario + "');");
             DBManager.CLS.DBOperacion oOperacion = new DBManager.CLS.DBOperacion();
 
             try
@@ -79,11 +86,11 @@ namespace General.CLS
         {
             Boolean Guardado = false;
             StringBuilder Sentencia = new StringBuilder();
-            Sentencia.Append("update escenarios set ");
+            Sentencia.Append("update proyectos set ");
             Sentencia.Append("titulo = '" + titulo + "',");
-            Sentencia.Append("notas = '" + notas + "',");
-            Sentencia.Append("pasoactual = '" + pasoactual + "',");
-            Sentencia.Append("idusuario ='" + idusuario + "' where idescenario = '" + idescenario + "';");
+            Sentencia.Append("descripcion = '" + notas + "',");
+            Sentencia.Append("cantidad_de_evidencias = '1',");
+            Sentencia.Append("idusuario ='" + idusuario + "' where idproyecto = '" + idescenario + "';");
             DBManager.CLS.DBOperacion oOperacion = new DBManager.CLS.DBOperacion();
 
             try
