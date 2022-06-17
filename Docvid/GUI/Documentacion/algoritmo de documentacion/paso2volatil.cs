@@ -24,6 +24,7 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
             a.setpasosiguiente(3);
+            a.agregarpaso("Equipo sin datos volatiles");
             a.panel.Visible = false;
         }
 
@@ -34,6 +35,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //btnregresar a = new btnregresar();
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
+          
+            a.agregarpaso("Equipo con datos volatiles");
             a.setpasosiguiente(5);
             a.panel.Visible = false;
         }

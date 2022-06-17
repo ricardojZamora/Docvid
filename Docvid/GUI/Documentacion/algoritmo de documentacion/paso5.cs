@@ -23,6 +23,7 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
             a.setpasosiguiente(3);
+            a.agregarpaso("Sistema empoderado");
             a.panel.Visible = false;
         }
 
@@ -32,6 +33,7 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
             a.setpasosiguiente(14);
+            a.agregarpaso("Sistema no empoderado");
             a.panel.Visible = false;
         }
 
@@ -43,6 +45,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
         private void button2_Click(object sender, EventArgs e)
         {
             visiblepregunta2();
+            panelprincipalpasos a = new panelprincipalpasos();
+            a.agregarpaso("Datos requeridos no son en vivo");
         }
 
         void visiblepregunta2()
@@ -77,6 +81,7 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //paso6 a = new paso6();
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
+            a.agregarpaso("Datos requeridos son en vivo");
             int nmero = 6;
             a.setpasosiguiente(nmero);
           //  a.panel.Visible = false;

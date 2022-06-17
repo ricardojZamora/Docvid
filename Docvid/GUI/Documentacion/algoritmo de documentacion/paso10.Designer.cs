@@ -36,7 +36,10 @@
             this.btnagregarcarpeta = new System.Windows.Forms.Button();
             this.txtcarpeta = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtarchivo = new System.Windows.Forms.TextBox();
+            this.fbd = new System.Windows.Forms.FolderBrowserDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btnguardararchivos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -103,6 +106,7 @@
             this.txtcarpeta.Name = "txtcarpeta";
             this.txtcarpeta.Size = new System.Drawing.Size(155, 32);
             this.txtcarpeta.TabIndex = 9;
+            this.txtcarpeta.TextChanged += new System.EventHandler(this.txtcarpeta_TextChanged);
             // 
             // button3
             // 
@@ -113,14 +117,32 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "Agregar archivo";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox1
+            // txtarchivo
             // 
-            this.textBox1.Location = new System.Drawing.Point(138, 162);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 32);
-            this.textBox1.TabIndex = 11;
+            this.txtarchivo.Location = new System.Drawing.Point(138, 162);
+            this.txtarchivo.Multiline = true;
+            this.txtarchivo.Name = "txtarchivo";
+            this.txtarchivo.Size = new System.Drawing.Size(155, 32);
+            this.txtarchivo.TabIndex = 11;
+            this.txtarchivo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btnguardararchivos
+            // 
+            this.btnguardararchivos.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnguardararchivos.Location = new System.Drawing.Point(185, 214);
+            this.btnguardararchivos.Name = "btnguardararchivos";
+            this.btnguardararchivos.Size = new System.Drawing.Size(193, 32);
+            this.btnguardararchivos.TabIndex = 13;
+            this.btnguardararchivos.Text = "Guardar archivos";
+            this.btnguardararchivos.UseVisualStyleBackColor = true;
+            this.btnguardararchivos.Visible = false;
+            this.btnguardararchivos.Click += new System.EventHandler(this.btnguardararchivos_Click);
             // 
             // paso10
             // 
@@ -129,8 +151,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(603, 430);
             this.ControlBox = false;
+            this.Controls.Add(this.btnguardararchivos);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtarchivo);
             this.Controls.Add(this.btnagregarcarpeta);
             this.Controls.Add(this.txtcarpeta);
             this.Controls.Add(this.label1);
@@ -155,6 +178,9 @@
         private System.Windows.Forms.Button btnagregarcarpeta;
         private System.Windows.Forms.TextBox txtcarpeta;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtarchivo;
+        private System.Windows.Forms.FolderBrowserDialog fbd;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button btnguardararchivos;
     }
 }

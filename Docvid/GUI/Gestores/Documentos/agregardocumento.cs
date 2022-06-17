@@ -297,14 +297,14 @@ namespace Docvid.GUI.Gestores.Documentos
 
         //buscar carpeta
         private void button2_Click(object sender, EventArgs e)
-        {
+        {  
             var resultado = fbd.ShowDialog();
             if (resultado == DialogResult.OK)
             {
                 //extraemos la direccion del archivo
                 txtruta.Text = fbd.SelectedPath;
                 String auxiliar1 = fbd.SelectedPath;
-
+                
                 //conversion de \ a /
                 auxiliar1 = auxiliar1.Replace(@"\", "/");
 

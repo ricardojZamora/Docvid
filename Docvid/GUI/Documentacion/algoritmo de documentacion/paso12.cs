@@ -22,6 +22,7 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
            // operacion_terminada a = new operacion_terminada();
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
+            a.agregarpaso("No tiene medios de comunicacion adicionales");
             a.setpasosiguiente(14);
             a.panel.Visible = false;
         }
@@ -29,6 +30,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
         private void button1_Click(object sender, EventArgs e)
         {
             label2.Visible = true;
+            panelprincipalpasos a = new panelprincipalpasos();
+            a.agregarpaso("Tiene medio(s) de comunicacion adicional(es)");
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -23,6 +23,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
             a.setpasosiguiente(9);
+            a.agregarpaso("Es volatil los datos que se requieren del dispositivo");
+
             a.panel.Visible = false;
         }
 
@@ -32,7 +34,14 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
             //a.ShowDialog();
             panelprincipalpasos a = new panelprincipalpasos();
             a.setpasosiguiente(10);
+            a.agregarpaso("Es no volatil los datos que se requieren del dispositivo");
+
             a.panel.Visible = false;
+        }
+
+        private void paso8_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

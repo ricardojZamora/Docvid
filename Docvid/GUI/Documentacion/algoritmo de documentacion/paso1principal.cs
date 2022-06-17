@@ -35,6 +35,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
                 //paso2volatil a = new paso2volatil();
                 //a.ShowDialog();
                 panelprincipalpasos a = new panelprincipalpasos();
+                a.agregarpaso("Coleccion de datos");
+                a.agregarpaso("Equipo encendido");
                 a.setpasosiguiente(2);
                 a.panel.Visible = false;
             }
@@ -45,6 +47,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
                 //a.ShowDialog();
                 panelprincipalpasos a = new panelprincipalpasos();
                 a.setpasosiguiente(11);
+                a.agregarpaso("Coleccion de datos");
+                a.agregarpaso("Equipo apagado");
                 a.panel.Visible = false;
             }
             else
@@ -64,8 +68,9 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
                // a.panelpaso5();
                 //a.condicionespanel();
                 //// condiciones para el panel
-                
 
+                a.agregarpaso("Adquisicion de datos");
+                a.agregarpaso("Equipo encendido");
                 a.setpasosiguiente(5);
                 a.timercambiopanel.Enabled = true;
             //    a.panel.Visible = false;
@@ -87,6 +92,8 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
                 //paso13 a = new paso13();
                 //a.ShowDialog();
                 panelprincipalpasos a = new panelprincipalpasos();
+                a.agregarpaso("Adquisicion de datos");
+                a.agregarpaso("Equipo apagado");
                 a.setpasosiguiente(13);
               //  a.panel.Visible = false;
               //  a.timercambiopanel.Enabled = true;
