@@ -21,14 +21,25 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
         {
             panelprincipalpasos a = new panelprincipalpasos();
             List<String> pasoshechos = a.getlista();
+            String cadenaimprimir="";
             txtreporte.Text = "";
             a.agregarpaso("Termino pasos de un dispositivo");
             for (int i = 0; i < pasoshechos.Count; i++)
             {
-                txtreporte.Text = txtreporte.Text +  pasoshechos[i] + "\n";
-            }
+                if(i >= 1)
+                {
+                    cadenaimprimir = cadenaimprimir + "\t\n" + pasoshechos[i];
+                    //txtreporte.Text = txtreporte.Text + "\n"+  pasoshechos[i];
+                    //txtreporte.Text = pasoshechos[i];
+                }
+                else
+                {
+                    cadenaimprimir = cadenaimprimir + pasoshechos[i];
+
+                }
+            } txtreporte.Text = cadenaimprimir;
          //   MessageBox.Show(pasoshechos.Count.ToString());
-            a.vercantidadenlalista();
+            //a.vercantidadenlalista();
         }
     }
 }

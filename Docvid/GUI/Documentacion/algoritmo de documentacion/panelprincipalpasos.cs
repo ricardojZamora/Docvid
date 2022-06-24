@@ -15,7 +15,7 @@ namespace Docvid.GUI.Documentacion.algoritmo_de_documentacion
         public static int pasosiguiente =0;
         Boolean cambiopanel = false;
         //esta lista almacenara los pasos que se haran de algoritmo
-        List<String> pasoshechos = new List<String>();
+        public static List<String> pasoshechos = new List<String>();
 
         public List<String> getlista ()
     {
