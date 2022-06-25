@@ -345,7 +345,7 @@
             this.btnadministrardocumentos.Name = "btnadministrardocumentos";
             this.btnadministrardocumentos.Size = new System.Drawing.Size(300, 75);
             this.btnadministrardocumentos.TabIndex = 1;
-            this.btnadministrardocumentos.Text = "Mis_proyectos";
+            this.btnadministrardocumentos.Text = "Mis proyectos";
             this.btnadministrardocumentos.UseVisualStyleBackColor = false;
             this.btnadministrardocumentos.Click += new System.EventHandler(this.btnadministrardocumentos_Click);
             // 
