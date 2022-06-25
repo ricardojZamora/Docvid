@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(proyectos));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(proyectos));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnagregar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -70,7 +70,8 @@
             // 
             // btnagregar
             // 
-            this.btnagregar.Image = ((System.Drawing.Image)(resources.GetObject("btnagregar.Image")));
+            this.btnagregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnagregar.Image = global::Docvid.Properties.Resources._1;
             this.btnagregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(69, 22);
@@ -84,7 +85,8 @@
             // 
             // btnmodificar
             // 
-            this.btnmodificar.Image = ((System.Drawing.Image)(resources.GetObject("btnmodificar.Image")));
+            this.btnmodificar.BackColor = System.Drawing.Color.Transparent;
+            this.btnmodificar.Image = global::Docvid.Properties.Resources._2;
             this.btnmodificar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnmodificar.Name = "btnmodificar";
             this.btnmodificar.Size = new System.Drawing.Size(78, 22);
@@ -98,7 +100,8 @@
             // 
             // btneliminar
             // 
-            this.btneliminar.Image = ((System.Drawing.Image)(resources.GetObject("btneliminar.Image")));
+            this.btneliminar.BackColor = System.Drawing.Color.Transparent;
+            this.btneliminar.Image = global::Docvid.Properties.Resources._3;
             this.btneliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(70, 22);
@@ -124,6 +127,9 @@
             // 
             this.dtgvdatos.AllowUserToAddRows = false;
             this.dtgvdatos.AllowUserToDeleteRows = false;
+            this.dtgvdatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvdatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSlateGray;
@@ -219,6 +225,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.dtgvdatos);
             this.Controls.Add(this.toolStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "proyectos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

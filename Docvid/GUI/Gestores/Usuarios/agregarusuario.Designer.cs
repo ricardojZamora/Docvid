@@ -65,6 +65,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(500, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 13);
@@ -74,6 +75,7 @@
             // lblusuario
             // 
             this.lblusuario.AutoSize = true;
+            this.lblusuario.ForeColor = System.Drawing.Color.White;
             this.lblusuario.Location = new System.Drawing.Point(230, 25);
             this.lblusuario.Name = "lblusuario";
             this.lblusuario.Size = new System.Drawing.Size(96, 13);
@@ -90,27 +92,38 @@
             // 
             // btncancelar
             // 
+            this.btncancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btncancelar.FlatAppearance.BorderSize = 0;
+            this.btncancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelar.ForeColor = System.Drawing.Color.White;
             this.btncancelar.Location = new System.Drawing.Point(328, 226);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(75, 23);
             this.btncancelar.TabIndex = 17;
             this.btncancelar.Text = "Cancelar";
-            this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.UseVisualStyleBackColor = false;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnagregar
             // 
+            this.btnagregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnagregar.FlatAppearance.BorderSize = 0;
+            this.btnagregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnagregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnagregar.ForeColor = System.Drawing.Color.White;
             this.btnagregar.Location = new System.Drawing.Point(155, 226);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(75, 23);
             this.btnagregar.TabIndex = 16;
             this.btnagregar.Text = "Agregar";
-            this.btnagregar.UseVisualStyleBackColor = true;
+            this.btnagregar.UseVisualStyleBackColor = false;
             this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(249, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
@@ -128,6 +141,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(249, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(23, 13);
@@ -136,17 +150,23 @@
             // 
             // btnagregarrol
             // 
+            this.btnagregarrol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnagregarrol.FlatAppearance.BorderSize = 0;
+            this.btnagregarrol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnagregarrol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnagregarrol.ForeColor = System.Drawing.Color.White;
             this.btnagregarrol.Location = new System.Drawing.Point(410, 187);
             this.btnagregarrol.Name = "btnagregarrol";
             this.btnagregarrol.Size = new System.Drawing.Size(75, 23);
             this.btnagregarrol.TabIndex = 29;
             this.btnagregarrol.Text = "Agregar";
-            this.btnagregarrol.UseVisualStyleBackColor = true;
+            this.btnagregarrol.UseVisualStyleBackColor = false;
             this.btnagregarrol.Click += new System.EventHandler(this.btnagregarrol_Click);
             // 
             // lbldescripcionrol
             // 
             this.lbldescripcionrol.AutoSize = true;
+            this.lbldescripcionrol.ForeColor = System.Drawing.Color.White;
             this.lbldescripcionrol.Location = new System.Drawing.Point(53, 164);
             this.lbldescripcionrol.Name = "lbldescripcionrol";
             this.lbldescripcionrol.Size = new System.Drawing.Size(74, 13);
@@ -162,7 +182,7 @@
             this.groupBox1.Controls.Add(this.rddactivo);
             this.groupBox1.Controls.Add(this.rddsuspendido);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 89);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(121, 61);
@@ -174,7 +194,7 @@
             // 
             this.rddactivo.AutoSize = true;
             this.rddactivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rddactivo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rddactivo.ForeColor = System.Drawing.Color.White;
             this.rddactivo.Location = new System.Drawing.Point(6, 19);
             this.rddactivo.Name = "rddactivo";
             this.rddactivo.Size = new System.Drawing.Size(61, 17);
@@ -187,7 +207,7 @@
             // 
             this.rddsuspendido.AutoSize = true;
             this.rddsuspendido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rddsuspendido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rddsuspendido.ForeColor = System.Drawing.Color.White;
             this.rddsuspendido.Location = new System.Drawing.Point(6, 38);
             this.rddsuspendido.Name = "rddsuspendido";
             this.rddsuspendido.Size = new System.Drawing.Size(91, 17);
@@ -208,6 +228,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(249, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
@@ -216,6 +237,7 @@
             // 
             // txttelefono
             // 
+            this.txttelefono.ForeColor = System.Drawing.Color.White;
             this.txttelefono.Location = new System.Drawing.Point(155, 143);
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(249, 20);
@@ -243,6 +265,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(619, 269);
             this.Controls.Add(this.txtidrolss);
             this.Controls.Add(this.label1);
@@ -261,6 +284,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.txtnombreusuario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "agregarusuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

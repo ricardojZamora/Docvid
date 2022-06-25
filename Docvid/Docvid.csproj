@@ -598,7 +598,60 @@
   <ItemGroup>
     <None Include="Resources\acce3.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abrir-documento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandeja-de-entrada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-sharing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-account-button-with-user-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-chain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mantenimiento-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-apagar-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GUI\Gestores\Cadenasdecustodias\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

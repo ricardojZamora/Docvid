@@ -38,17 +38,14 @@
             this.btnmodificar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btneliminar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnverificararchivo = new System.Windows.Forms.ToolStripButton();
             this.txtfiltro = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblestado = new System.Windows.Forms.ToolStripStatusLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.dtgvdatos = new System.Windows.Forms.DataGridView();
-            this.datecalendario = new System.Windows.Forms.DateTimePicker();
-            this.chsinfecha = new System.Windows.Forms.CheckBox();
-            this.btnverificararchivo = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.idevidencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idtipoevidencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idproyecto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +63,9 @@
             this.fechacorta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nota = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ruta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datecalendario = new System.Windows.Forms.DateTimePicker();
+            this.chsinfecha = new System.Windows.Forms.CheckBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdatos)).BeginInit();
@@ -91,7 +91,8 @@
             // 
             // btnagregar
             // 
-            this.btnagregar.Image = ((System.Drawing.Image)(resources.GetObject("btnagregar.Image")));
+            this.btnagregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnagregar.Image = global::Docvid.Properties.Resources._1;
             this.btnagregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(69, 22);
@@ -105,7 +106,8 @@
             // 
             // btnmodificar
             // 
-            this.btnmodificar.Image = ((System.Drawing.Image)(resources.GetObject("btnmodificar.Image")));
+            this.btnmodificar.BackColor = System.Drawing.Color.Transparent;
+            this.btnmodificar.Image = global::Docvid.Properties.Resources._2;
             this.btnmodificar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnmodificar.Name = "btnmodificar";
             this.btnmodificar.Size = new System.Drawing.Size(78, 22);
@@ -119,12 +121,27 @@
             // 
             // btneliminar
             // 
-            this.btneliminar.Image = ((System.Drawing.Image)(resources.GetObject("btneliminar.Image")));
+            this.btneliminar.BackColor = System.Drawing.Color.Transparent;
+            this.btneliminar.Image = global::Docvid.Properties.Resources._3;
             this.btneliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(70, 22);
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btnverificararchivo
+            // 
+            this.btnverificararchivo.Image = ((System.Drawing.Image)(resources.GetObject("btnverificararchivo.Image")));
+            this.btnverificararchivo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnverificararchivo.Name = "btnverificararchivo";
+            this.btnverificararchivo.Size = new System.Drawing.Size(203, 22);
+            this.btnverificararchivo.Text = "Verificar manipulacion de archivo";
+            this.btnverificararchivo.Click += new System.EventHandler(this.btnverificararchivo_Click);
             // 
             // txtfiltro
             // 
@@ -172,8 +189,11 @@
             // 
             this.dtgvdatos.AllowUserToAddRows = false;
             this.dtgvdatos.AllowUserToDeleteRows = false;
-            this.dtgvdatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dtgvdatos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgvdatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgvdatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dtgvdatos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dtgvdatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.dtgvdatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -226,45 +246,6 @@
             this.dtgvdatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvdatos.Size = new System.Drawing.Size(1105, 498);
             this.dtgvdatos.TabIndex = 19;
-            // 
-            // datecalendario
-            // 
-            this.datecalendario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datecalendario.Location = new System.Drawing.Point(421, 26);
-            this.datecalendario.Name = "datecalendario";
-            this.datecalendario.Size = new System.Drawing.Size(292, 24);
-            this.datecalendario.TabIndex = 21;
-            this.datecalendario.ValueChanged += new System.EventHandler(this.datecalendario_ValueChanged);
-            // 
-            // chsinfecha
-            // 
-            this.chsinfecha.AutoSize = true;
-            this.chsinfecha.Location = new System.Drawing.Point(745, 30);
-            this.chsinfecha.Name = "chsinfecha";
-            this.chsinfecha.Size = new System.Drawing.Size(111, 17);
-            this.chsinfecha.TabIndex = 22;
-            this.chsinfecha.Text = "Sin importar fecha";
-            this.chsinfecha.UseVisualStyleBackColor = true;
-            this.chsinfecha.CheckedChanged += new System.EventHandler(this.chsinfecha_CheckedChanged);
-            // 
-            // btnverificararchivo
-            // 
-            this.btnverificararchivo.Image = ((System.Drawing.Image)(resources.GetObject("btnverificararchivo.Image")));
-            this.btnverificararchivo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnverificararchivo.Name = "btnverificararchivo";
-            this.btnverificararchivo.Size = new System.Drawing.Size(203, 22);
-            this.btnverificararchivo.Text = "Verificar manipulacion de archivo";
-            this.btnverificararchivo.Click += new System.EventHandler(this.btnverificararchivo_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // backgroundWorker1
-            // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
             // idevidencia
             // 
@@ -420,10 +401,36 @@
             this.ruta.ReadOnly = true;
             this.ruta.Visible = false;
             // 
+            // datecalendario
+            // 
+            this.datecalendario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datecalendario.Location = new System.Drawing.Point(421, 26);
+            this.datecalendario.Name = "datecalendario";
+            this.datecalendario.Size = new System.Drawing.Size(292, 24);
+            this.datecalendario.TabIndex = 21;
+            this.datecalendario.ValueChanged += new System.EventHandler(this.datecalendario_ValueChanged);
+            // 
+            // chsinfecha
+            // 
+            this.chsinfecha.AutoSize = true;
+            this.chsinfecha.Location = new System.Drawing.Point(745, 30);
+            this.chsinfecha.Name = "chsinfecha";
+            this.chsinfecha.Size = new System.Drawing.Size(111, 17);
+            this.chsinfecha.TabIndex = 22;
+            this.chsinfecha.Text = "Sin importar fecha";
+            this.chsinfecha.UseVisualStyleBackColor = true;
+            this.chsinfecha.CheckedChanged += new System.EventHandler(this.chsinfecha_CheckedChanged);
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            // 
             // gestiondocumentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1105, 620);
             this.Controls.Add(this.chsinfecha);
             this.Controls.Add(this.datecalendario);
@@ -431,6 +438,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "gestiondocumentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -78,24 +78,34 @@
             // 
             // btncambiarcontra
             // 
+            this.btncambiarcontra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btncambiarcontra.FlatAppearance.BorderSize = 0;
+            this.btncambiarcontra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btncambiarcontra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncambiarcontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncambiarcontra.ForeColor = System.Drawing.Color.White;
             this.btncambiarcontra.Location = new System.Drawing.Point(574, 489);
             this.btncambiarcontra.Name = "btncambiarcontra";
             this.btncambiarcontra.Size = new System.Drawing.Size(195, 35);
             this.btncambiarcontra.TabIndex = 10;
             this.btncambiarcontra.Text = "Cambiar contraseña";
-            this.btncambiarcontra.UseVisualStyleBackColor = true;
+            this.btncambiarcontra.UseVisualStyleBackColor = false;
             this.btncambiarcontra.Click += new System.EventHandler(this.btncambiarcontra_Click);
             // 
             // btnsuspender
             // 
+            this.btnsuspender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnsuspender.FlatAppearance.BorderSize = 0;
+            this.btnsuspender.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnsuspender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsuspender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsuspender.ForeColor = System.Drawing.Color.White;
             this.btnsuspender.Location = new System.Drawing.Point(52, 489);
             this.btnsuspender.Name = "btnsuspender";
             this.btnsuspender.Size = new System.Drawing.Size(195, 35);
             this.btnsuspender.TabIndex = 11;
             this.btnsuspender.Text = "Suspender mi cuenta";
-            this.btnsuspender.UseVisualStyleBackColor = true;
+            this.btnsuspender.UseVisualStyleBackColor = false;
             this.btnsuspender.Click += new System.EventHandler(this.btnsuspender_Click);
             // 
             // dtgvdatos
@@ -131,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(880, 566);
             this.Controls.Add(this.lbltelefono);
             this.Controls.Add(this.dtgvdatos);

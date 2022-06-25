@@ -62,7 +62,7 @@
             this.chlbOpciones.FormattingEnabled = true;
             this.chlbOpciones.Location = new System.Drawing.Point(75, 42);
             this.chlbOpciones.Name = "chlbOpciones";
-            this.chlbOpciones.Size = new System.Drawing.Size(415, 214);
+            this.chlbOpciones.Size = new System.Drawing.Size(415, 208);
             this.chlbOpciones.TabIndex = 3;
             this.chlbOpciones.SelectedIndexChanged += new System.EventHandler(this.chlbOpciones_SelectedIndexChanged_1);
             this.chlbOpciones.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.chlbOpciones_MouseDoubleClick_1);
@@ -76,6 +76,7 @@
             this.Controls.Add(this.chlbOpciones);
             this.Controls.Add(this.lblanuncio);
             this.Controls.Add(this.labelindicador);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "lista";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "lista";

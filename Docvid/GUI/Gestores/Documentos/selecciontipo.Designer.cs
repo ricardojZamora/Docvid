@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtgvdatos = new System.Windows.Forms.DataGridView();
             this.idtipoevidencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,9 +44,9 @@
             // 
             this.dtgvdatos.AllowUserToAddRows = false;
             this.dtgvdatos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
-            this.dtgvdatos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvdatos.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            this.dtgvdatos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvdatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.dtgvdatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvdatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idtipoevidencia,
@@ -54,6 +54,7 @@
             this.caracteristica,
             this.formato,
             this.extension});
+            this.dtgvdatos.GridColor = System.Drawing.Color.SteelBlue;
             this.dtgvdatos.Location = new System.Drawing.Point(0, 23);
             this.dtgvdatos.Name = "dtgvdatos";
             this.dtgvdatos.ReadOnly = true;
@@ -125,10 +126,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(683, 474);
             this.Controls.Add(this.txtfiltro);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgvdatos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "selecciontipo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "selecciontipo";

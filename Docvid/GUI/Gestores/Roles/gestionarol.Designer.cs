@@ -44,11 +44,11 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.dtgvdatos = new System.Windows.Forms.DataGridView();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lblestado = new System.Windows.Forms.ToolStripStatusLabel();
             this.idrol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idpermiso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lblestado = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdatos)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -76,7 +76,8 @@
             // 
             // toolStripButton1
             // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.BackColor = System.Drawing.Color.Transparent;
+            this.toolStripButton1.Image = global::Docvid.Properties.Resources._1;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(69, 22);
@@ -90,7 +91,8 @@
             // 
             // btnmodificar
             // 
-            this.btnmodificar.Image = ((System.Drawing.Image)(resources.GetObject("btnmodificar.Image")));
+            this.btnmodificar.BackColor = System.Drawing.Color.Transparent;
+            this.btnmodificar.Image = global::Docvid.Properties.Resources._2;
             this.btnmodificar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnmodificar.Name = "btnmodificar";
             this.btnmodificar.Size = new System.Drawing.Size(78, 22);
@@ -104,7 +106,8 @@
             // 
             // btneliminar
             // 
-            this.btneliminar.Image = ((System.Drawing.Image)(resources.GetObject("btneliminar.Image")));
+            this.btneliminar.BackColor = System.Drawing.Color.Transparent;
+            this.btneliminar.Image = global::Docvid.Properties.Resources._3;
             this.btneliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(70, 22);
@@ -118,6 +121,7 @@
             // 
             // btnpermisos
             // 
+            this.btnpermisos.BackColor = System.Drawing.Color.Transparent;
             this.btnpermisos.Image = ((System.Drawing.Image)(resources.GetObject("btnpermisos.Image")));
             this.btnpermisos.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnpermisos.Name = "btnpermisos";
@@ -149,7 +153,7 @@
             // 
             this.dtgvdatos.AllowUserToAddRows = false;
             this.dtgvdatos.AllowUserToDeleteRows = false;
-            this.dtgvdatos.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtgvdatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.dtgvdatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSlateGray;
@@ -191,22 +195,6 @@
             this.dtgvdatos.DoubleClick += new System.EventHandler(this.dtgvdatos_DoubleClick);
             this.dtgvdatos.Enter += new System.EventHandler(this.dtgvdatos_Enter);
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblestado});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 544);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(880, 22);
-            this.statusStrip1.TabIndex = 16;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // lblestado
-            // 
-            this.lblestado.Name = "lblestado";
-            this.lblestado.Size = new System.Drawing.Size(136, 17);
-            this.lblestado.Text = "Registros encontrados: 0";
-            // 
             // idrol
             // 
             this.idrol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -233,12 +221,29 @@
             this.idpermiso.Name = "idpermiso";
             this.idpermiso.ReadOnly = true;
             this.idpermiso.Visible = false;
-            this.idpermiso.Width = 92;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblestado});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 544);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(880, 22);
+            this.statusStrip1.TabIndex = 16;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // lblestado
+            // 
+            this.lblestado.BackColor = System.Drawing.Color.White;
+            this.lblestado.Name = "lblestado";
+            this.lblestado.Size = new System.Drawing.Size(136, 17);
+            this.lblestado.Text = "Registros encontrados: 0";
             // 
             // gestionarol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(880, 566);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.dtgvdatos);

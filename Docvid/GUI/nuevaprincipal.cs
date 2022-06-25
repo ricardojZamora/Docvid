@@ -137,8 +137,9 @@ namespace Docvid.GUI
             a.ShowDialog();
         }
 
-       
-
-
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Para manejar la documentación se debe ir de arriba hacia abajo en orden");
+        }
     }
 }

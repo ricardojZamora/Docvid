@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nuevaprincipal));
             this.panelbotones = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -52,15 +51,48 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelprincipal = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelbotones.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelbotones
             // 
             this.panelbotones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelbotones.Controls.Add(this.pictureBox12);
+            this.panelbotones.Controls.Add(this.pictureBox11);
+            this.panelbotones.Controls.Add(this.pictureBox10);
+            this.panelbotones.Controls.Add(this.pictureBox9);
+            this.panelbotones.Controls.Add(this.pictureBox8);
+            this.panelbotones.Controls.Add(this.pictureBox7);
+            this.panelbotones.Controls.Add(this.pictureBox6);
+            this.panelbotones.Controls.Add(this.pictureBox5);
+            this.panelbotones.Controls.Add(this.pictureBox3);
+            this.panelbotones.Controls.Add(this.pictureBox2);
             this.panelbotones.Controls.Add(this.panel11);
             this.panelbotones.Controls.Add(this.panel10);
             this.panelbotones.Controls.Add(this.panel9);
@@ -173,6 +205,7 @@
             this.btnfirmadigital.Size = new System.Drawing.Size(200, 49);
             this.btnfirmadigital.TabIndex = 10;
             this.btnfirmadigital.Text = "Llaves";
+            this.btnfirmadigital.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnfirmadigital.UseVisualStyleBackColor = false;
             this.btnfirmadigital.Click += new System.EventHandler(this.btnfirmadigital_Click);
             // 
@@ -190,6 +223,7 @@
             this.btnpermisos.Size = new System.Drawing.Size(200, 49);
             this.btnpermisos.TabIndex = 9;
             this.btnpermisos.Text = "Mi cuenta";
+            this.btnpermisos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnpermisos.UseVisualStyleBackColor = false;
             this.btnpermisos.Click += new System.EventHandler(this.btnpermisos_Click);
             // 
@@ -207,6 +241,7 @@
             this.btnusuarios.Size = new System.Drawing.Size(200, 49);
             this.btnusuarios.TabIndex = 8;
             this.btnusuarios.Text = "Usuarios";
+            this.btnusuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnusuarios.UseVisualStyleBackColor = false;
             this.btnusuarios.Click += new System.EventHandler(this.btnusuarios_Click_1);
             // 
@@ -224,6 +259,7 @@
             this.btnmicuenta.Size = new System.Drawing.Size(200, 49);
             this.btnmicuenta.TabIndex = 7;
             this.btnmicuenta.Text = "Herramientas administrativas";
+            this.btnmicuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnmicuenta.UseVisualStyleBackColor = false;
             this.btnmicuenta.Click += new System.EventHandler(this.btnmicuenta_Click);
             // 
@@ -241,6 +277,7 @@
             this.btndocumentar.Size = new System.Drawing.Size(200, 49);
             this.btndocumentar.TabIndex = 6;
             this.btndocumentar.Text = "Documentar";
+            this.btndocumentar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndocumentar.UseVisualStyleBackColor = false;
             this.btndocumentar.Click += new System.EventHandler(this.btndocumentar_Click);
             // 
@@ -251,13 +288,14 @@
             this.btnproyectoscompartidosconmigo.FlatAppearance.BorderSize = 0;
             this.btnproyectoscompartidosconmigo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnproyectoscompartidosconmigo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnproyectoscompartidosconmigo.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnproyectoscompartidosconmigo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnproyectoscompartidosconmigo.ForeColor = System.Drawing.Color.White;
             this.btnproyectoscompartidosconmigo.Location = new System.Drawing.Point(0, 285);
             this.btnproyectoscompartidosconmigo.Name = "btnproyectoscompartidosconmigo";
             this.btnproyectoscompartidosconmigo.Size = new System.Drawing.Size(200, 49);
             this.btnproyectoscompartidosconmigo.TabIndex = 5;
-            this.btnproyectoscompartidosconmigo.Text = "Proyectos compartidos conmigo";
+            this.btnproyectoscompartidosconmigo.Text = "Proyectos \r\ncompartidos conmigo";
+            this.btnproyectoscompartidosconmigo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnproyectoscompartidosconmigo.UseVisualStyleBackColor = false;
             this.btnproyectoscompartidosconmigo.Click += new System.EventHandler(this.btnproyectoscompartidosconmigo_Click);
             // 
@@ -274,7 +312,7 @@
             this.btncerrarsesion.Size = new System.Drawing.Size(200, 43);
             this.btncerrarsesion.TabIndex = 4;
             this.btncerrarsesion.Text = "Cerrar sesion";
-            this.btncerrarsesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncerrarsesion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncerrarsesion.UseVisualStyleBackColor = false;
             this.btncerrarsesion.Click += new System.EventHandler(this.btncerrarsesion_Click);
             // 
@@ -291,7 +329,8 @@
             this.btncompartidos.Name = "btncompartidos";
             this.btncompartidos.Size = new System.Drawing.Size(200, 49);
             this.btncompartidos.TabIndex = 3;
-            this.btncompartidos.Text = "Proyectos compartidos";
+            this.btncompartidos.Text = "Proyectos \r\ncompartidos";
+            this.btncompartidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncompartidos.UseVisualStyleBackColor = false;
             this.btncompartidos.Click += new System.EventHandler(this.btncompartidos_Click);
             // 
@@ -308,7 +347,8 @@
             this.btnmisevidencias.Name = "btnmisevidencias";
             this.btnmisevidencias.Size = new System.Drawing.Size(200, 49);
             this.btnmisevidencias.TabIndex = 2;
-            this.btnmisevidencias.Text = "Todas mis evidencias";
+            this.btnmisevidencias.Text = "Todas mis \r\nevidencias";
+            this.btnmisevidencias.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnmisevidencias.UseVisualStyleBackColor = false;
             this.btnmisevidencias.Click += new System.EventHandler(this.btnmisevidencias_Click);
             // 
@@ -326,6 +366,7 @@
             this.btnadministrardocumentos.Size = new System.Drawing.Size(200, 49);
             this.btnadministrardocumentos.TabIndex = 1;
             this.btnadministrardocumentos.Text = "Mis proyectos";
+            this.btnadministrardocumentos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnadministrardocumentos.UseVisualStyleBackColor = false;
             this.btnadministrardocumentos.Click += new System.EventHandler(this.btnadministrardocumentos_Click);
             // 
@@ -352,14 +393,158 @@
             // panelprincipal
             // 
             this.panelprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.panelprincipal.Location = new System.Drawing.Point(200, 0);
+            this.panelprincipal.Location = new System.Drawing.Point(200, 35);
             this.panelprincipal.Name = "panelprincipal";
-            this.panelprincipal.Size = new System.Drawing.Size(902, 620);
+            this.panelprincipal.Size = new System.Drawing.Size(902, 585);
             this.panelprincipal.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(586, 1);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(123, 31);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "H O M E\r\n";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox4.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox4.Image = global::Docvid.Properties.Resources.exclamacion;
+            this.pictureBox4.Location = new System.Drawing.Point(1053, 1);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 26;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Red;
+            this.pictureBox12.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox12.Image = global::Docvid.Properties.Resources.icons8_apagar_24;
+            this.pictureBox12.Location = new System.Drawing.Point(12, 584);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 29;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox11.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox11.Image = global::Docvid.Properties.Resources.icons8_mantenimiento_50;
+            this.pictureBox11.Location = new System.Drawing.Point(12, 538);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 28;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox10.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox10.Image = global::Docvid.Properties.Resources.key_chain;
+            this.pictureBox10.Location = new System.Drawing.Point(12, 487);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 27;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox9.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox9.Image = global::Docvid.Properties.Resources.round_account_button_with_user_inside;
+            this.pictureBox9.Location = new System.Drawing.Point(12, 442);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 26;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox8.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox8.Image = global::Docvid.Properties.Resources.group;
+            this.pictureBox8.Location = new System.Drawing.Point(12, 389);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 25;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox7.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox7.Image = global::Docvid.Properties.Resources.archive;
+            this.pictureBox7.Location = new System.Drawing.Point(12, 340);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 24;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox6.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox6.Image = global::Docvid.Properties.Resources.delivery;
+            this.pictureBox6.Location = new System.Drawing.Point(12, 291);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 23;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox5.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox5.Image = global::Docvid.Properties.Resources.file_sharing;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 242);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 22;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox3.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox3.Image = global::Docvid.Properties.Resources.bandeja_de_entrada;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 193);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 21;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox2.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox2.Image = global::Docvid.Properties.Resources.abrir_documento;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 148);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::Docvid.Properties.Resources.configuracion;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(182, 120);
@@ -371,9 +556,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1105, 620);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panelprincipal);
             this.Controls.Add(this.panelbotones);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "nuevaprincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -381,8 +570,20 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.nuevaprincipal_FormClosed);
             this.panelbotones.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -412,5 +613,17 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }

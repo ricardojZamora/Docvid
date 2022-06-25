@@ -35,8 +35,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtcredencial = new System.Windows.Forms.TextBox();
-            this.btningresar = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.btningresar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblbienvenida
@@ -48,7 +52,7 @@
             this.lblbienvenida.Name = "lblbienvenida";
             this.lblbienvenida.Size = new System.Drawing.Size(661, 36);
             this.lblbienvenida.TabIndex = 0;
-            this.lblbienvenida.Text = "Bienvenido!!!";
+            this.lblbienvenida.Text = "Bienvenido";
             this.lblbienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblbienvenida.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -109,27 +113,57 @@
             this.txtcredencial.TabIndex = 5;
             this.txtcredencial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcredencial_KeyPress);
             // 
-            // btningresar
-            // 
-            this.btningresar.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btningresar.Location = new System.Drawing.Point(177, 319);
-            this.btningresar.Name = "btningresar";
-            this.btningresar.Size = new System.Drawing.Size(111, 51);
-            this.btningresar.TabIndex = 6;
-            this.btningresar.Text = "Ingresar";
-            this.btningresar.UseVisualStyleBackColor = true;
-            this.btningresar.Click += new System.EventHandler(this.btningresar_Click);
-            // 
             // btnsalir
             // 
+            this.btnsalir.BackColor = System.Drawing.Color.White;
+            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalir.Location = new System.Drawing.Point(436, 319);
+            this.btnsalir.Location = new System.Drawing.Point(380, 316);
             this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(108, 51);
+            this.btnsalir.Size = new System.Drawing.Size(166, 51);
             this.btnsalir.TabIndex = 7;
             this.btnsalir.Text = "Salir";
-            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // btningresar
+            // 
+            this.btningresar.BackColor = System.Drawing.Color.White;
+            this.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btningresar.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btningresar.Location = new System.Drawing.Point(183, 316);
+            this.btningresar.Name = "btningresar";
+            this.btningresar.Size = new System.Drawing.Size(166, 51);
+            this.btningresar.TabIndex = 6;
+            this.btningresar.Text = "Ingresar";
+            this.btningresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btningresar.UseVisualStyleBackColor = false;
+            this.btningresar.Click += new System.EventHandler(this.btningresar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox1.Image = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox1.Location = new System.Drawing.Point(193, 325);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
+            this.pictureBox2.Image = global::Docvid.Properties.Resources.Icon2;
+            this.pictureBox2.Location = new System.Drawing.Point(395, 325);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // login
             // 
@@ -138,6 +172,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(737, 396);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.btningresar);
             this.Controls.Add(this.txtcredencial);
@@ -146,12 +182,15 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.lblbienvenida);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Docvid ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.login_FormClosed);
             this.Load += new System.EventHandler(this.login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,9 +203,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtcredencial;
-        private System.Windows.Forms.Button btningresar;
         public System.Windows.Forms.Label lblbienvenida;
         private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.Button btningresar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

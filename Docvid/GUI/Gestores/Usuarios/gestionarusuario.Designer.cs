@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gestionarusuario));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gestionarusuario));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnagregar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -77,7 +77,7 @@
             // 
             // btnagregar
             // 
-            this.btnagregar.Image = ((System.Drawing.Image)(resources.GetObject("btnagregar.Image")));
+            this.btnagregar.Image = global::Docvid.Properties.Resources._1;
             this.btnagregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(69, 22);
@@ -91,7 +91,7 @@
             // 
             // btnmodificar
             // 
-            this.btnmodificar.Image = ((System.Drawing.Image)(resources.GetObject("btnmodificar.Image")));
+            this.btnmodificar.Image = global::Docvid.Properties.Resources._2;
             this.btnmodificar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnmodificar.Name = "btnmodificar";
             this.btnmodificar.Size = new System.Drawing.Size(78, 22);
@@ -105,7 +105,7 @@
             // 
             // btneliminar
             // 
-            this.btneliminar.Image = ((System.Drawing.Image)(resources.GetObject("btneliminar.Image")));
+            this.btneliminar.Image = global::Docvid.Properties.Resources._3;
             this.btneliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(70, 22);
@@ -134,7 +134,7 @@
             // 
             // btnactsus
             // 
-            this.btnactsus.Image = ((System.Drawing.Image)(resources.GetObject("btnactsus.Image")));
+            this.btnactsus.Image = global::Docvid.Properties.Resources.icons8_apagar_24;
             this.btnactsus.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnactsus.Name = "btnactsus";
             this.btnactsus.Size = new System.Drawing.Size(123, 22);
@@ -259,6 +259,7 @@
             // 
             // lblestado
             // 
+            this.lblestado.BackColor = System.Drawing.Color.White;
             this.lblestado.Name = "lblestado";
             this.lblestado.Size = new System.Drawing.Size(136, 17);
             this.lblestado.Text = "Registros encontrados: 0";
@@ -267,11 +268,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(880, 566);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.dtgvdatos);
             this.Controls.Add(this.toolStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "gestionarusuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

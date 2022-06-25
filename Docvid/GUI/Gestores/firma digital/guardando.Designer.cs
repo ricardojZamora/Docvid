@@ -54,6 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(11, 272);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
@@ -80,6 +81,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 301);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
@@ -88,12 +90,17 @@
             // 
             // btncrear
             // 
+            this.btncrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btncrear.FlatAppearance.BorderSize = 0;
+            this.btncrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btncrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncrear.ForeColor = System.Drawing.Color.White;
             this.btncrear.Location = new System.Drawing.Point(718, 272);
             this.btncrear.Name = "btncrear";
             this.btncrear.Size = new System.Drawing.Size(75, 42);
             this.btncrear.TabIndex = 8;
             this.btncrear.Text = "Crear";
-            this.btncrear.UseVisualStyleBackColor = true;
+            this.btncrear.UseVisualStyleBackColor = false;
             this.btncrear.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtescrituraolectura
@@ -117,6 +124,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(11, 246);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 13);
@@ -135,6 +143,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(11, 220);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 13);
@@ -166,18 +175,24 @@
             // 
             // btncambiarllaves
             // 
+            this.btncambiarllaves.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btncambiarllaves.FlatAppearance.BorderSize = 0;
+            this.btncambiarllaves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btncambiarllaves.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncambiarllaves.ForeColor = System.Drawing.Color.White;
             this.btncambiarllaves.Location = new System.Drawing.Point(637, 272);
             this.btncambiarllaves.Name = "btncambiarllaves";
             this.btncambiarllaves.Size = new System.Drawing.Size(75, 42);
             this.btncambiarllaves.TabIndex = 20;
             this.btncambiarllaves.Text = "Cambiar llaves";
-            this.btncambiarllaves.UseVisualStyleBackColor = true;
+            this.btncambiarllaves.UseVisualStyleBackColor = false;
             this.btncambiarllaves.Click += new System.EventHandler(this.btncambiarllaves_Click);
             // 
             // guardando
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(800, 329);
             this.Controls.Add(this.btncambiarllaves);
             this.Controls.Add(this.btnbuscarllaveprivada);
@@ -193,6 +208,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btncrear);
             this.Controls.Add(this.txtescrituraolectura);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "guardando";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Firmando";

@@ -54,6 +54,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(46, 21);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 13);
@@ -62,6 +63,7 @@
             // 
             // label1
             // 
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(96, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(335, 20);
@@ -79,22 +81,32 @@
             // 
             // btncancelar
             // 
+            this.btncancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btncancelar.FlatAppearance.BorderSize = 0;
+            this.btncancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelar.ForeColor = System.Drawing.Color.White;
             this.btncancelar.Location = new System.Drawing.Point(272, 170);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(75, 23);
             this.btncancelar.TabIndex = 13;
             this.btncancelar.Text = "Cancelar";
-            this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.UseVisualStyleBackColor = false;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnagregar
             // 
+            this.btnagregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnagregar.FlatAppearance.BorderSize = 0;
+            this.btnagregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnagregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnagregar.ForeColor = System.Drawing.Color.White;
             this.btnagregar.Location = new System.Drawing.Point(145, 170);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(75, 23);
             this.btnagregar.TabIndex = 12;
             this.btnagregar.Text = "Agregar";
-            this.btnagregar.UseVisualStyleBackColor = true;
+            this.btnagregar.UseVisualStyleBackColor = false;
             this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
             // 
             // Notificador
@@ -103,6 +115,7 @@
             // 
             // txtidpermiso
             // 
+            this.txtidpermiso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.txtidpermiso.Location = new System.Drawing.Point(420, 172);
             this.txtidpermiso.Multiline = true;
             this.txtidpermiso.Name = "txtidpermiso";
@@ -113,16 +126,22 @@
             // 
             // btngestionarpermiso
             // 
+            this.btngestionarpermiso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btngestionarpermiso.FlatAppearance.BorderSize = 0;
+            this.btngestionarpermiso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btngestionarpermiso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btngestionarpermiso.ForeColor = System.Drawing.Color.White;
             this.btngestionarpermiso.Location = new System.Drawing.Point(95, 128);
             this.btngestionarpermiso.Name = "btngestionarpermiso";
             this.btngestionarpermiso.Size = new System.Drawing.Size(335, 23);
             this.btngestionarpermiso.TabIndex = 26;
             this.btngestionarpermiso.Text = "Gestionar permisos";
-            this.btngestionarpermiso.UseVisualStyleBackColor = true;
+            this.btngestionarpermiso.UseVisualStyleBackColor = false;
             this.btngestionarpermiso.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblpermiso
             // 
+            this.lblpermiso.ForeColor = System.Drawing.Color.Transparent;
             this.lblpermiso.Location = new System.Drawing.Point(95, 107);
             this.lblpermiso.Name = "lblpermiso";
             this.lblpermiso.Size = new System.Drawing.Size(335, 18);
@@ -134,6 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(520, 205);
             this.Controls.Add(this.btngestionarpermiso);
             this.Controls.Add(this.txtidpermiso);
@@ -144,6 +164,7 @@
             this.Controls.Add(this.txtdescripcion);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnagregar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "agregarrol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

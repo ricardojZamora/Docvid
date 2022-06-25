@@ -140,3 +140,26 @@ C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12
 C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\General\obj\Debug\General.csprojResolveAssemblyReference.cache
 C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\General\obj\Debug\General.dll
 C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\General\obj\Debug\General.pdb
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\General.dll
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\General.pdb
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\CacheManager.dll
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\DBManager.dll
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\itextsharp.dll
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\MySql.Data.dll
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\MySql.Web.dll
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\CacheManager.pdb
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\DBManager.pdb
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\itextsharp.xml
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\MySql.Data.xml
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\MySql.Data.Entity.EF5.xml
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\bin\Debug\MySql.Web.xml
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\obj\Debug\General.csprojAssemblyReference.cache
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\obj\Debug\General.csproj.CoreCompileInputs.cache
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\obj\Debug\General.csproj.CopyComplete
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\obj\Debug\General.dll
+C:\Users\ricar\Desktop\final\Docvid proceso 12 abriendo archivos dtgv\General\obj\Debug\General.pdb
